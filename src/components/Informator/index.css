@@ -82,7 +82,7 @@
     .info-container {
         width: 100vw;
         position: absolute;
-        bottom: 0;
+        bottom: 10%;
         background: #000000a0;
         height: 30vh;
         display: flex;
@@ -110,5 +110,6 @@
         margin: 5px;
         overflow: initial;
         display: flex;
+        font-size: small;
     }
 }
