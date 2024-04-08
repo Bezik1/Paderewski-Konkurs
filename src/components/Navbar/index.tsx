@@ -5,13 +5,16 @@ import { useEffect, useRef, useState } from "react";;
 import { reveresedVanishingAnimation, vanishingAnimation } from "../../animations/Vanishing";
 import { useRender } from "../../contexts/RenderContext";
 import { SUBSITES } from "../../const/subsites";
+import gsap from "gsap";
 
 const Navbar = () =>{
+    const pointRef = useRef<HTMLDivElement>(null!)
     const listRef = useRef<HTMLDivElement>(null!)
     const showBtnRef = useRef<HTMLDivElement>(null!)
     const [show, setShow] = useState(true)
     const [animate, setAnimate] = useState(true)
     const { render, setRender } = useRender()
+    const [lastRender, setLastRender] = useState(0)
 
     useEffect(() =>{
         if(animate) {
@@ -21,6 +24,15 @@ const Navbar = () =>{
             vanishingAnimation(listRef.current, 0, 0.1)
         }
     }, [animate, show])
+
+    useEffect(() =>{
+        const tl = gsap.timeline()
+
+        tl.to(pointRef.current, {
+            y: `-=${(lastRender-render)*50}`
+        })
+        setLastRender(render)
+    }, [render])
 
     const handleClick = () =>{ 
         setAnimate(!animate);
@@ -38,12 +50,13 @@ const Navbar = () =>{
             {show 
                 ? <div ref={showBtnRef}><CiMenuFries className="menu-btn" onClick={handleClick}/></div>
                 : <div className='navbar-list' ref={listRef}>
-                    <IoIosClose  className="close-btn" onClick={handleClick}/> 
+                    <IoIosClose  className="close-btn" onClick={handleClick}/>
+                    <div ref={pointRef} className="point">☉</div>
                     {SUBSITES.map((subsite, i) => 
                         <div 
                             className={`navbar-el ${SUBSITES[render].name == subsite.name ? "navbar-el-active" : ""}`} 
                             onClick={() => setRender(i)}
-                        >{SUBSITES[render].name == subsite.name ? "  ☉" : ""}{subsite.name}
+                        >{subsite.name}
                         </div>
                     )}
             </div>}
