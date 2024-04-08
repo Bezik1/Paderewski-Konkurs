@@ -7,7 +7,7 @@ import { STRASBURG } from '../../const/locations'
 import { LocationProvider } from '../../contexts/LocationContext'
 import { Bloom, EffectComposer } from '@react-three/postprocessing'
 import LocationList from '../LocationsList'
-import { vanishingAnimation } from '../../animations/Vanishing'
+import { vanishingMoveNextAnimation } from '../../animations/Vanishing'
 import COSMOS_PATH from "../../assets/cosmos.jpg"
 
 const Map = () =>{
@@ -16,11 +16,11 @@ const Map = () =>{
     const [currentLocation, setCurrentLocation] = useState<Location>(STRASBURG)
   
     useEffect(() =>{
-      vanishingAnimation(canvasRef.current, 1)
+        vanishingMoveNextAnimation(canvasRef.current, 1)
     }, [])
 
     useEffect(() =>{
-        vanishingAnimation(backgroundRef.current, 0)
+        vanishingMoveNextAnimation(backgroundRef.current, 0)
     }, [])
     
     return (

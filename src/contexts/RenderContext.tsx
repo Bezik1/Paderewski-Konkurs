@@ -1,15 +1,13 @@
 import { createContext, useContext } from "react";
-import { Subsite } from "../types/Subsite";
-import { SUBSITES } from "../const/subsites";
 
-const RenderContext = createContext<[Subsite, React.Dispatch<React.SetStateAction<Subsite>> | undefined]>([
-    SUBSITES[0],
+const RenderContext = createContext<[number, React.Dispatch<React.SetStateAction<number>> | undefined]>([
+    0,
     undefined,
 ])
 
 type RenderContextProvider = {
-    render: Subsite
-    setRender: React.Dispatch<React.SetStateAction<Subsite>>
+    render: number
+    setRender: React.Dispatch<React.SetStateAction<number>>
     children: React.ReactNode | React.ReactNode[],
 }
 

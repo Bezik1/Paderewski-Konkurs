@@ -1,12 +1,14 @@
 import { useEffect, useRef, useState } from "react"
 import PADEREWSKI_PATH from "../../assets/paderewski.png"
-import { vanishingAnimation } from "../../animations/Vanishing"
+import { vanishingMoveNextAnimation } from "../../animations/Vanishing"
 import "./index.css"
 import { CareerItem } from "../../types/Career"
 import { IoLocationOutline } from "react-icons/io5";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { CAREER_ITEMS } from "../../const/career"
+import { useRender } from "../../contexts/RenderContext"
+import { SUBSITES } from "../../const/subsites"
 
 const MAX_TEXT_LEN = 100
 
@@ -45,22 +47,43 @@ const CareerElement = ({ item } : { item: CareerItem }) =>{
 
 const MusicCareer = () =>{
     const backgroundRef = useRef<HTMLImageElement>(null!)
+    const timelineBoxRef = useRef<HTMLDivElement>(null!)
+    const [isScrolledToBottom, setIsScrolledToBottom] = useState(false)
+    const { render, setRender } = useRender()
 
     useEffect(() =>{
-        vanishingAnimation(backgroundRef.current, 0)
+        vanishingMoveNextAnimation(backgroundRef.current, 0)
     }, [])
+
+    const handleScroll = () => {
+        const { scrollTop, scrollHeight, clientHeight } = timelineBoxRef.current!
+        if (scrollTop + clientHeight >= scrollHeight-10) {
+            setIsScrolledToBottom(true)
+        } else {
+            setIsScrolledToBottom(false)
+        }
+        
+        if(isScrolledToBottom) {
+            setRender((render+1)%SUBSITES.length)
+        }
+    }
 
     return (
         <div className="music-career">
             <img ref={backgroundRef} className="background career-music-background" src={PADEREWSKI_PATH} />
             <div className="career-box">
                 <div className="career-background" />
-                <div className="career-timeline-box">
-                <VerticalTimeline
-                    lineColor="#fff"
+                <div
+                    ref={timelineBoxRef}
+                    className="career-timeline-box"
+                    onScroll={handleScroll}
+                    style={{ overflowY: 'auto' }} // Add this style to enable scrolling
                 >
-                    {CAREER_ITEMS.map(careerItem => <CareerElement item={careerItem} />)}
-              </VerticalTimeline>
+                    <VerticalTimeline
+                        lineColor="#fff"
+                    >
+                        {CAREER_ITEMS.map(careerItem => <CareerElement item={careerItem} />)}
+                    </VerticalTimeline>
                 </div>
             </div>
         </div>

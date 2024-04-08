@@ -3,15 +3,18 @@ import Navbar from './components/Navbar'
 import { useState } from 'react'
 import { RenderProvider } from './contexts/RenderContext'
 import { SUBSITES } from './const/subsites'
+import NextArrow from './components/NextArrow'
 
 const App = () =>{
-  const [render, setRender] = useState(SUBSITES[0])
+  const [render, setRender] = useState(0)
 
   return (
     <div className='app'>
       <RenderProvider render={render} setRender={setRender}>
         <Navbar />
-        {render.el}
+        {SUBSITES[render].el}
+        <NextArrow arrow="up"/>
+        <NextArrow arrow="down"/>
       </RenderProvider>
     </div>
   )

@@ -1,0 +1,23 @@
+.next-arrow {
+    transition: .5s;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    color: #bdbdbd;
+    right: 50%;
+}
+
+.next-arrow:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    transform: translateY(-3px);
+}
+
+.up {
+    top: 5%;
+}
+
+.down {
+    bottom:  5%;
+}

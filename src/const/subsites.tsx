@@ -1,11 +1,16 @@
 import Map from "../components/Map";
 import MusicCareer from "../components/MusicCareer";
+import Politics from "../components/Politics";
 import { Subsite } from "../types/Subsite";
 
 export const SUBSITES: Subsite[] = [
     {
         name: "Oś Czasu",
         el: <MusicCareer />
+    },
+    {
+        name: "Działalność Polityczna",
+        el: <Politics />
     },
     {
         name: "Mapa",
@@ -21,10 +26,6 @@ export const SUBSITES: Subsite[] = [
     },
     {
         name: "Autorytet Moralny",
-        el: <></>
-    },
-    {
-        name: "Działalność Polityczna",
         el: <></>
     },
     {

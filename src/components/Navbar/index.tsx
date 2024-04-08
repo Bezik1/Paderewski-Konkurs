@@ -38,14 +38,14 @@ const Navbar = () =>{
             {show 
                 ? <div ref={showBtnRef}><CiMenuFries className="menu-btn" onClick={handleClick}/></div>
                 : <div className='navbar-list' ref={listRef}>
-                    {SUBSITES.map(subsite => 
+                    <IoIosClose  className="close-btn" onClick={handleClick}/> 
+                    {SUBSITES.map((subsite, i) => 
                         <div 
-                            className={`navbar-el ${render.name == subsite.name ? "navbar-el-active" : ""}`} 
-                            onClick={() => setRender(subsite)}
-                        >{subsite.name}
+                            className={`navbar-el ${SUBSITES[render].name == subsite.name ? "navbar-el-active" : ""}`} 
+                            onClick={() => setRender(i)}
+                        >{SUBSITES[render].name == subsite.name ? "  ☉" : ""}{subsite.name}
                         </div>
                     )}
-                    <IoIosClose  className="close-btn" onClick={handleClick}/> 
             </div>}
         </div>
     )
