@@ -13,7 +13,7 @@ const App = () =>{
       <RenderProvider render={render} setRender={setRender}>
         <Navbar />
         {SUBSITES[render].el}
-        <NextArrow arrow="up"/>
+        {render != 0 && <NextArrow arrow="up"/>}
         <NextArrow arrow="down"/>
       </RenderProvider>
     </div>
