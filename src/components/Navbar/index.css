@@ -1,0 +1,41 @@
+.navbar {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 3;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-el {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.navbar-el:hover {
+    cursor: pointer;
+    text-shadow: 0 0 5px #fff;
+}
+
+.menu-btn {
+    cursor: pointer;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.close-btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+.navbar-el-active {
+    text-shadow: 0 0 5px #fff;
+}
