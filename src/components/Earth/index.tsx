@@ -1,4 +1,4 @@
-import { TextureLoader, Group, Mesh, DoubleSide, FrontSide, Plane, Vector3, Object3DEventMap, Object3D } from 'three';
+import { TextureLoader, Group, Mesh, Vector3 } from 'three';
 import { Sphere } from '@react-three/drei';
 import { useEffect, useRef, useState } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
