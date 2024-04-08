@@ -1,9 +1,9 @@
-import { TextureLoader, Group, Mesh, DoubleSide } from 'three';
+import { TextureLoader, Group, Mesh } from 'three';
 import { Sphere } from '@react-three/drei';
 import { useEffect, useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { EARTH_TEXTURE, SPECULAR_TEXTURE } from '../../const/paths';
-import { Location, SetLocation } from '../../types/Location';
+import { Location } from '../../types/Location';
 import { LOCATIONS } from '../../const/locations';
 import gsap from 'gsap';
 import { useLocationContext } from '../../contexts/LocationContext';

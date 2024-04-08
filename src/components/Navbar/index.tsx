@@ -1,12 +1,9 @@
 import { CiMenuFries } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
 import './index.css'
-import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
+import { useEffect, useRef, useState } from "react";;
 import { reveresedVanishingAnimation, vanishingAnimation } from "../../animations/Vanishing";
 import { useRender } from "../../contexts/RenderContext";
-import MusicCareer from "../MusicCareer";
-import Map from "../Map";
 import { SUBSITES } from "../../const/subsites";
 
 const Navbar = () =>{

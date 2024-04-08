@@ -2,7 +2,6 @@ import './App.css'
 import Navbar from './components/Navbar'
 import { useState } from 'react'
 import { RenderProvider } from './contexts/RenderContext'
-import MusicCareer from './components/MusicCareer'
 import { SUBSITES } from './const/subsites'
 
 const App = () =>{

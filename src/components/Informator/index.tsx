@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './index.css'
 import { useLocationContext } from '../../contexts/LocationContext'
-import gsap from 'gsap'
 import { vanishingAnimation } from '../../animations/Vanishing'
 
 const MAX_TEXT_LEN = 400

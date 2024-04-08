@@ -6,6 +6,7 @@ import { CareerItem } from "../../types/Career"
 import { IoLocationOutline } from "react-icons/io5";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import { CAREER_ITEMS } from "../../const/career"
 
 const MAX_TEXT_LEN = 100
 
@@ -44,32 +45,6 @@ const CareerElement = ({ item } : { item: CareerItem }) =>{
 
 const MusicCareer = () =>{
     const backgroundRef = useRef<HTMLImageElement>(null!)
-    const [careerItems, setCareerItems] = useState<CareerItem[]>([
-        {
-            title: "Studia Muzyczne",
-            location: "Warszawa",
-            text: "W 1872 roku podjął studia muzyczne w Konserwatorium Warszawskim. Do grona jego nauczycieli należeli: Gustaw Roguski, Juliusz Janotha, Paweł Schlözer, Rudolf Strobel, Jan Śliwiński.",
-            year: 1872
-        },
-        {
-            title: "Studia Muzyczne",
-            location: "Warszawa",
-            text: "W 1872 roku podjął studia muzyczne w Konserwatorium Warszawskim. Do grona jego nauczycieli należeli: Gustaw Roguski, Juliusz Janotha, Paweł Schlözer, Rudolf Strobel, Jan Śliwiński.",
-            year: 1872
-        },
-        {
-            title: "Studia Muzyczne",
-            location: "Warszawa",
-            text: "W 1872 roku podjął studia muzyczne w Konserwatorium Warszawskim. Do grona jego nauczycieli należeli: Gustaw Roguski, Juliusz Janotha, Paweł Schlözer, Rudolf Strobel, Jan Śliwiński.",
-            year: 1872
-        },
-        {
-            title: "Studia Muzyczne",
-            location: "Warszawa",
-            text: "W 1872 roku podjął studia muzyczne w Konserwatorium Warszawskim. Do grona jego nauczycieli należeli: Gustaw Roguski, Juliusz Janotha, Paweł Schlözer, Rudolf Strobel, Jan Śliwiński.",
-            year: 1872
-        }
-    ])
 
     useEffect(() =>{
         vanishingAnimation(backgroundRef.current, 0)
@@ -84,7 +59,7 @@ const MusicCareer = () =>{
                 <VerticalTimeline
                     lineColor="#fff"
                 >
-                    {careerItems.map(careerItem => <CareerElement item={careerItem} />)}
+                    {CAREER_ITEMS.map(careerItem => <CareerElement item={careerItem} />)}
               </VerticalTimeline>
                 </div>
             </div>

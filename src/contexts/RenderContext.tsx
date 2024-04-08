@@ -1,7 +1,4 @@
-import { ReactElement, createContext, useContext } from "react";
-import { Location } from "../types/Location";
-import { STRASBURG } from "../const/locations";
-import Map from "../components/Map";
+import { createContext, useContext } from "react";
 import { Subsite } from "../types/Subsite";
 import { SUBSITES } from "../const/subsites";
 
