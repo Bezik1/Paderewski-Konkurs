@@ -35,3 +35,19 @@
     align-items: center;
     gap: 5px;
 }
+
+@media screen and (max-width: 800px) {
+    .career-music-background {
+        height: auto;        
+    }
+
+    .career-timeline-box {
+        width: 99vw;
+        z-index: 4;
+    }
+
+    .career-background {
+        width: 99vw;
+        background: transparent ;
+    }
+}

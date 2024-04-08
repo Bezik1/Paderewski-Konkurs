@@ -16,7 +16,7 @@ const CareerElement = ({ item } : { item: CareerItem }) =>{
 
     return (
         <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work career-el"
             contentStyle={{ background: '#ff00003a', paddingBottom: 0, color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #fff' }}
             date={String(year)}
@@ -52,7 +52,7 @@ const MusicCareer = () =>{
 
     return (
         <div className="music-career">
-            <img ref={backgroundRef} className="background" src={PADEREWSKI_PATH} />
+            <img ref={backgroundRef} className="background career-music-background" src={PADEREWSKI_PATH} />
             <div className="career-box">
                 <div className="career-background" />
                 <div className="career-timeline-box">
