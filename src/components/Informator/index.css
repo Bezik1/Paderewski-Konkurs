@@ -77,3 +77,38 @@
 .informator-red-more {
     width: 30vw;
 }
+
+@media screen and (max-width: 800px){
+    .info-container {
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        background: #000000a0;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: bottom;
+        z-index: 3;
+    }
+
+    .content-header {
+        margin-top: 30px;
+    }
+
+    .content {
+        margin: 5px;
+        height: 20vh;
+    }
+
+    .informator {
+        width: 99vw;
+        height: 20vh;
+    }
+
+    .content-text {
+        width: 100%;
+        margin: 5px;
+        overflow: initial;
+        display: flex;
+    }
+}

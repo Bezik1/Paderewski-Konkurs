@@ -39,3 +39,40 @@
 .navbar-el-active {
     text-shadow: 0 0 5px #fff;
 }
+
+@media only screen and (max-width: 768px) {
+    
+    .navbar {
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: right;
+        justify-content: right;
+        text-align: right;
+        background-color: #00000079;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 100vw;
+    }
+
+    .navbar-list.show {
+        display: flex;
+    }
+
+    .navbar-el {
+        margin: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .menu-btn {
+        padding: 50px;
+    }
+}

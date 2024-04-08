@@ -19,16 +19,20 @@ const Informator = () =>{
         vanishingAnimation(divRef.current, 0, 0.2)
     }, [location])
 
+    const resposnsiveReadMore = window.innerWidth <= 800 ? "" : "Czytaj więcej"
+
     return (
-        <div className={`informator ${readMore ? 'informator-red-more': ''}`}>
-            <div className='content' ref={divRef}>
-                {!readMore
-                    ? <><header className='content-header'>{name}</header><article className='content-text read-more-fade'>{text.substring(0, 399)}</article></>
-                    : <><header className='content-header'>{name}</header><article className='content-text content-text-more'>{text}</article></>
-                }
-                {text.length > MAX_TEXT_LEN && <div onClick={() => setReadMore(!readMore)} className={`read-more ${readMore ? 'read-active' : ''}`}>
-                    {readMore ? "Czytaj mniej" : "Czytaj więcej"}
-                </div>}
+        <div className='info-container'>
+            <div className={`informator ${readMore ? 'informator-red-more': ''}`}>
+                <div className='content' ref={divRef}>
+                    {!readMore
+                        ? <><header className='content-header'>{name}</header><article className='content-text read-more-fade'>{text.substring(0, 399)}</article></>
+                        : <><header className='content-header'>{name}</header><article className='content-text content-text-more'>{text}</article></>
+                    }
+                    {text.length > MAX_TEXT_LEN && <div onClick={() => setReadMore(!readMore)} className={`read-more ${readMore ? 'read-active' : ''}`}>
+                        {readMore ? "Czytaj mniej" : resposnsiveReadMore}
+                    </div>}
+                </div>
             </div>
         </div>
     )
