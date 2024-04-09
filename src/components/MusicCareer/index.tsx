@@ -3,7 +3,6 @@ import PADEREWSKI_PATH from "../../assets/paderewski.png"
 import { vanishingMoveNextAnimation } from "../../animations/Vanishing"
 import "./index.css"
 import { CareerItem } from "../../types/Career"
-import { IoLocationOutline } from "react-icons/io5";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { CAREER_ITEMS } from "../../const/career"
@@ -13,7 +12,7 @@ import { SUBSITES } from "../../const/subsites"
 const MAX_TEXT_LEN = 100
 
 const CareerElement = ({ item } : { item: CareerItem }) =>{
-    const { title, text, location, year } = item
+    const { title, year } = item
     const [readMore, setReadMore] = useState(false)
 
     return (
@@ -25,19 +24,12 @@ const CareerElement = ({ item } : { item: CareerItem }) =>{
             dateClassName="career-year"
             iconStyle={{ background: '#ab1515', color: '#fff' }}
             >
-            <h3 className="vertical-timeline-element-title">{title}</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-                <div className="location">
-                    <IoLocationOutline />
-                    {location}
-                </div>
-            </h4>
             <p>
                 {!readMore 
-                    ? text.substring(0, 99)
-                    : text
+                    ? title.substring(0, 99)
+                    : title
                 }
-                {text.length > MAX_TEXT_LEN && <div onClick={() => setReadMore(!readMore)} className={`read-more ${readMore ? 'read-active' : ''}`}>
+                {title.length > MAX_TEXT_LEN && <div onClick={() => setReadMore(!readMore)} className={`read-more ${readMore ? 'read-active' : ''}`}>
                     {readMore ? "Czytaj mniej" : "Czytaj więcej"}
                 </div>}
             </p>

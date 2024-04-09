@@ -76,7 +76,7 @@ const LocationPoint = ({ itemLocation, handleRotate }: { itemLocation: Location;
   
     return (
       <group ref={earthRef}>
-        <Sphere args={[2, 32, 32]} ref={meshRef}>
+        <Sphere args={[2, 16, 16]} ref={meshRef}>
           <meshPhongMaterial map={colorMap} color={0xffffff} emissive={0xffffff} emissiveIntensity={0.2} alphaMap={specularMap} alphaTest={0.15} />
         </Sphere>
         {LOCATIONS.map((location) => (

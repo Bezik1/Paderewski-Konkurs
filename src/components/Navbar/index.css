@@ -48,8 +48,8 @@
 
 .point {
     position: absolute;
-    top: -1vh;
-    right: -1vw;
+    top: 12vh;
+    right: 0vw;
     font-size: 30px;
     text-shadow: 0 0 10px #fff;
 }

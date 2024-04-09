@@ -16,6 +16,10 @@
     justify-content: right;
 }
 
+.career-el {
+    padding-bottom: 5vh;
+}
+
 .career-timeline-box {
     width: 40vw;
     margin-top: 20vh;

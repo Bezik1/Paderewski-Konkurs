@@ -20,10 +20,12 @@ const Navbar = () =>{
         if(animate) {
             reveresedVanishingAnimation(listRef.current, 0, 0.1)
             vanishingAnimation(showBtnRef.current, 0)
+            reveresedVanishingAnimation(pointRef.current, 0)
         } else {
             vanishingAnimation(listRef.current, 0, 0.1)
+            vanishingAnimation(pointRef.current, 0)
         }
-    }, [animate, show])
+    }, [animate])
 
     useEffect(() =>{
         const tl = gsap.timeline()
@@ -51,7 +53,6 @@ const Navbar = () =>{
                 ? <div ref={showBtnRef}><CiMenuFries className="menu-btn" onClick={handleClick}/></div>
                 : <div className='navbar-list' ref={listRef}>
                     <IoIosClose  className="close-btn" onClick={handleClick}/>
-                    <div ref={pointRef} className="point">☉</div>
                     {SUBSITES.map((subsite, i) => 
                         <div 
                             className={`navbar-el ${SUBSITES[render].name == subsite.name ? "navbar-el-active" : ""}`} 
@@ -60,6 +61,7 @@ const Navbar = () =>{
                         </div>
                     )}
             </div>}
+            <div ref={pointRef} className="point">☉</div>
         </div>
     )
 }
