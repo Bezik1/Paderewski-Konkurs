@@ -11,8 +11,8 @@ const Navbar = () =>{
     const pointRef = useRef<HTMLDivElement>(null!)
     const listRef = useRef<HTMLDivElement>(null!)
     const showBtnRef = useRef<HTMLDivElement>(null!)
-    const [show, setShow] = useState(false)
-    const [animate, setAnimate] = useState(false)
+    const [show, setShow] = useState(true)
+    const [animate, setAnimate] = useState(true)
     const { render, setRender } = useRender()
     const [lastRender, setLastRender] = useState(0)
 
