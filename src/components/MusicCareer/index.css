@@ -1,57 +1,33 @@
-.career-box {
-    display: flex;
-    width: 99vw;
-    height: 100vh;
-    align-items: right;
-    justify-content: right;
-}
-
-.career-background {
-    position: absolute;
-    width: 60vw;
-    height: 100vh;
-    background: linear-gradient(90deg, transparent, #000000a1, #000000df);
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
-.career-el {
-    padding-bottom: 5vh;
-}
-
-.career-timeline-box {
+.career-container {
+    z-index: 0;
     width: 40vw;
-    margin-top: 20vh;
-    margin-right: 5vw;
-    overflow: auto;
-    display: inline-block;
-}
-
-.career-year {
-    margin: 30px;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-.location {
+    height: 80vh;
+    margin-top: 5vw;
+    margin-right: 15vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5px;
+    overflow-y: scroll;
+    gap: 10vh;
 }
 
-@media screen and (max-width: 800px) {
-    .career-music-background {
-        height: 0;        
-    }
+.politics-background {
+    position: absolute;
+    z-index: -1;
+    width: 99vw;
+    height: 100.2vh;
+}
 
-    .career-timeline-box {
-        width: 99vw;
-        z-index: 4;
-    }
+.birth-svg {
+    color: #fff;
+    width: 150px;
+    height: 150px;
+}
 
-    .career-background {
-        width: 99vw;
-        background: transparent ;
-    }
+.career-element {
+    margin-top: 50px;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
 }

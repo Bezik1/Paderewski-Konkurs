@@ -1,0 +1,57 @@
+.career-box {
+    display: flex;
+    width: 99vw;
+    height: 100vh;
+    align-items: right;
+    justify-content: right;
+}
+
+.career-background {
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    background: linear-gradient(90deg, transparent, #000000a1, #000000df);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.career-el {
+    padding-bottom: 5vh;
+}
+
+.career-timeline-box {
+    width: 40vw;
+    margin-top: 20vh;
+    margin-right: 5vw;
+    overflow: auto;
+    display: inline-block;
+}
+
+.career-year {
+    margin: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .career-music-background {
+        height: 0;        
+    }
+
+    .career-timeline-box {
+        width: 99vw;
+        z-index: 4;
+    }
+
+    .career-background {
+        width: 99vw;
+        background: transparent ;
+    }
+}
