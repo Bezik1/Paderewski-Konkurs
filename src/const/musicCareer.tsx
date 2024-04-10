@@ -23,4 +23,20 @@ export const MUSIC_CAREER_ITEMS = [
         text: "W 1888r. odbył się w Sali Erarda pierwszy recital Paderewskiego w Paryżu. Na ten, jak się okazało, sensacyjny występ przybyło znamienite audytorium, składające się z polskiej i francuskiej arystokracji, ludzi wyjątkowo kulturalnych i zainteresowanych sztuką i ówczesnych sław muzycznych. Na widowni ponadto zasiedli sławni muzycy ówczesnego świata m. in. słynny rosyjski kompozytor – Czajkowski, wybitni francuscy dyrygenci i pani Dubois - ostania uczennica Chopina. Ten niezwykle entuzjastycznie przyjęty debiut otworzył Paderewskiemu drzwi do światowej kariery pianistycznej - dał młodemu artyście niepowtarzalną szansę, którą ten, dzięki swej ciężkiej pracy i zaangażowaniu, wykorzystał.",
         el: <></>
     },
+    {
+        text: "Kolejnym doniosłym wydarzeniem w życiu Paderewskiego było wykonanie jego koncertu a-moll przez panią Jesipow, żonę Leszetyckiego, pod batutą Hansa Richtera w Wiedniu. Kompozycja młodego artysty ponownie spotkała się ze szczególnie entuzjastycznym przyjęciem.",
+        el: <></>
+    },
+    {
+        text: "Po trzech udanych sezonach w Paryżu i występach w innych państwach Europy kontynentalnej, Paderewski postanowił udać się z koncertami do Londynu. Jego pierwsze trzy recitale odbyły się w St. James Hall i, mimo początkowej niechęci ze strony Anglików, ostatecznie spotkały się z pozytywnym przyjęciem. W 1890r. artysta odbył swoje pierwsze tournée po Anglii i rozległą trasę koncertową w Niemczech.",
+        el: <></>
+    },
+    {
+        text: "W 1891r. znana firma fabrykantów fortepianów – Steinway – zaproponowała Paderewskiemu objazd po Stanach Zjednoczonych. Celem tej trasy było zareklamowanie fortepianów organizatora, zgodnie z korzystną umową cały zysk przypadł Paderewskiemu. Pierwszy koncert w nowym świecie zagrał w Carnegie Hall w Nowym Jorku. Pierwsze amerykańskie tournée było dla pianisty niezwykle wymagające, zagrał 109 koncertów i Recitali w ciągu 130 dni. Ból w ramieniu spowodowany nadwyrężeniem i przepracowaniem w tamtym okresie towarzyszył artyście do końca życia. Do 1939 roku Paderewski odbył w Stanach Zjednoczonych 19 tras koncertowych. ",
+        el: <></>
+    },
+    {
+        text: "Polski pisarz i poeta Alfred Nossig stale proponował Paderewskiemu, że napisze tekst, który mógłby posłużyć kompozytorowi jako libretto do opery. W 1893r. pianista przyjął propozycję i rozpoczął pracę nad swoją operą „Manru”.  W sumie nad operą, wyłączając przerwy, pracował dwa i pół roku. Prapremiera „Manru” miała miejsce w Królewskiej Operze w Dreźnie w 1901r. pod dyrekcją Ernsta von Schucha. Premiera tej opery odbyła się tego samego roku w Teatrze Miejskim we Lwowie pod batutą Francesca Spetrino. Do dzieł skomponowanych w tamtym okresie przez artystę należą również: „6 pieśni” do słów Adama Mickiewicza oraz „Fantazja Polska”.",
+        el: <></>
+    }
 ]
