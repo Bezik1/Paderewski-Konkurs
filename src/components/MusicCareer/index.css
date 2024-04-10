@@ -12,9 +12,10 @@
 }
 
 .music-career-header {
-    margin-top: 20px;
+    background: linear-gradient(90deg, #ffffff46, transparent);
+    padding-left: 20px;
     transition: .5s;
-    margin-left: 20px;
+    margin-left: 0;
     text-align: left;
     display: flex;
     align-items: start;
