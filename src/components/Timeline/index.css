@@ -51,7 +51,7 @@
     }
 
     .career-background {
-        width: 99vw;
-        background: transparent ;
+        width: 0;
+        height: 0;
     }
 }
