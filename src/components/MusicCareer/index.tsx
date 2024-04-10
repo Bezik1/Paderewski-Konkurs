@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react"
-import PADEREWSKI_FLAG_PATH from "../../assets/paderewski-flag.png"
+import PADEREWSKI_PATH from "../../assets/paderewski.png"
 import './index.css'
 import { vanishingMoveNextAnimation } from "../../animations/Vanishing"
 import { useRender } from "../../contexts/RenderContext"
@@ -37,10 +37,11 @@ const MusicCareer = () =>{
 
     return (
         <div ref={politicsRef} className='politics-box'>
-            <img ref={backgroundRef} src={PADEREWSKI_FLAG_PATH} className='politics-background' />
+            <img ref={backgroundRef} src={PADEREWSKI_PATH} className='politics-background' />
             <div className="career-box">
                 <div className="career-background" />
                 <div className="career-container">
+                <header className="music-career-header">Kariera Muzyczna</header>
                     <div className="career-element">
                         {MUSIC_CAREER_ITEMS.map(career_item => <div className="career-el">{career_item.text}</div>)}
                         <FaBirthdayCake className="birth-svg"/>
