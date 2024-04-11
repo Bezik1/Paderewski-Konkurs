@@ -6,8 +6,8 @@ import { CareerItem } from "../../types/Career"
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { CAREER_ITEMS } from "../../const/career"
-import { useRender } from "../../contexts/RenderContext"
-import { SUBSITES } from "../../const/subsites"
+// import { useRender } from "../../contexts/RenderContext"
+// import { SUBSITES } from "../../const/subsites"
 
 const MAX_TEXT_LEN = 100
 
@@ -40,24 +40,24 @@ const CareerElement = ({ item } : { item: CareerItem }) =>{
 const Timeline = () =>{
     const backgroundRef = useRef<HTMLImageElement>(null!)
     const timelineBoxRef = useRef<HTMLDivElement>(null!)
-    const [isScrolledToBottom, setIsScrolledToBottom] = useState(false)
-    const { render, setRender } = useRender()
+    // const [isScrolledToBottom, setIsScrolledToBottom] = useState(false)
+    // const { render, setRender } = useRender()
 
     useEffect(() =>{
         vanishingMoveNextAnimation(backgroundRef.current, 0)
     }, [])
 
     const handleScroll = () => {
-        const { scrollTop, scrollHeight, clientHeight } = timelineBoxRef.current!
-        if (scrollTop + clientHeight >= scrollHeight-10) {
-            setIsScrolledToBottom(true)
-        } else {
-            setIsScrolledToBottom(false)
-        }
+        // const { scrollTop, scrollHeight, clientHeight } = timelineBoxRef.current!
+        // if (scrollTop + clientHeight >= scrollHeight-10) {
+        //     setIsScrolledToBottom(true)
+        // } else {
+        //     setIsScrolledToBottom(false)
+        // }
         
-        if(isScrolledToBottom) {
-            setRender((render+1)%SUBSITES.length)
-        }
+        // if(isScrolledToBottom) {
+        //     setRender((render+1)%SUBSITES.length)
+        // }
     }
 
     return (
