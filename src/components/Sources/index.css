@@ -1,0 +1,98 @@
+.sources-container {
+    width: 99vw;
+    height: 99vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.sources-content-box {
+    position: absolute;
+    right: 9%;
+    margin-top: 20vh;
+}
+
+.sources-content-header {
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+.sources-content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.source {
+    font-size: small;;
+    height: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.blob {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    background: linear-gradient(#fff, #ff0000);
+    animation: morphing 10s infinite;
+    width: 30vw;
+    height: 55vh;
+    z-index: -2;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    backface-visibility: hidden;
+}
+
+@keyframes colorChange {
+    50% {
+      opacity: 1
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes gradientChange {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes morphing {
+    0% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    25% { 
+      border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+    50% {
+      border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+    }
+    75% {
+      border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
+  }
+  
+  @keyframes lenghtTransformation {
+    0% {
+      transform: scaleY(1.1);
+    }
+    33% {
+      transform: scaleY(1.15);
+    }
+    66% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(0.9);
+    }
+  }

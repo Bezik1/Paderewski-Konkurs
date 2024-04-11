@@ -12,7 +12,6 @@
 }
 
 .music-career-header {
-    background: linear-gradient(90deg, #ffffff46, transparent);
     padding-left: 20px;
     transition: .5s;
     margin-left: 0;
@@ -20,7 +19,7 @@
     display: flex;
     align-items: start;
     justify-content: left;
-    font-size: 40px;
+    font-size: 60px;
     color: #c71e1e;
     font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import PADEREWSKI_FLAG_PATH from "../../assets/paderewski-flag.png"
+import BACKGROUND_PATH from "../../assets/timeline_bg.png"
 import { vanishingMoveNextAnimation } from "../../animations/Vanishing"
 import "./index.css"
 import { CareerItem } from "../../types/Career"
@@ -62,7 +62,7 @@ const Timeline = () =>{
 
     return (
         <div className="music-career">
-            <img ref={backgroundRef} className="background career-music-background" src={PADEREWSKI_FLAG_PATH} />
+            <img ref={backgroundRef} className="background career-music-background" src={BACKGROUND_PATH} />
             <div className="career-box">
                 <div className="career-background" />
                 <div

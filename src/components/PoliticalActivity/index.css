@@ -1,0 +1,7 @@
+.political-box {
+    display: flex;
+    width: 99vw;
+    height: 100vh;
+    align-items: right;
+    justify-content: right;
+}

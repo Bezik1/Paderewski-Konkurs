@@ -38,5 +38,13 @@ export const MUSIC_CAREER_ITEMS = [
     {
         text: "Polski pisarz i poeta Alfred Nossig stale proponował Paderewskiemu, że napisze tekst, który mógłby posłużyć kompozytorowi jako libretto do opery. W 1893r. pianista przyjął propozycję i rozpoczął pracę nad swoją operą „Manru”.  W sumie nad operą, wyłączając przerwy, pracował dwa i pół roku. Prapremiera „Manru” miała miejsce w Królewskiej Operze w Dreźnie w 1901r. pod dyrekcją Ernsta von Schucha. Premiera tej opery odbyła się tego samego roku w Teatrze Miejskim we Lwowie pod batutą Francesca Spetrino. Do dzieł skomponowanych w tamtym okresie przez artystę należą również: „6 pieśni” do słów Adama Mickiewicza oraz „Fantazja Polska”.",
         el: <></>
+    },
+    {
+        text: "Do 1914r. Paderewski odbył wiele tournées, m.in. po Ameryce Południowej, Afryce Południowej i Australii i Nowej Zelandii. Koncertując na salonach świata nawiązał wiele znajomości i zyskał znamienitą reputację. Po wybuchu Wielkiej Wojny poświęcił się przede wszystkim działalności patriotycznej, politycznej i społecznej na rzecz pomocy Polakom i odbudowy Ojczyzny. Między 1915r. a 1917r. pianista koncertował niesłychanie często. Pozyskiwane wówczas środki przekazywał na fundusz Komitetu Pomocy Ofiarom Wojny w Polsce. W 1916r. wystąpił z koncertem w Białym Domu w obecności prezydenta Wilsona. W 1917. Paderewski skomponował swój ostatni utwór – hymn bojowy „Hej, Orle Biały”.",
+        el: <></>
+    },
+    {
+        text: "Paderewski powrócił do koncertowania w 1922r. W następnych latach odbył liczne trasy koncertowe w rozmaitych częściach świata. W 1932r. na koncert Paderewskiego w Nowym Jorku przybyła rekordowa liczba słuchaczy - 16 tysięcy. Swój ostatni koncert artysta zagrał 21 maja 1939r. w Rochester w stanie Nowy Jork. Zmarł dwa lata później.",
+        el: <></>
     }
 ]
