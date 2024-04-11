@@ -40,10 +40,13 @@ const CareerElement = ({ item } : { item: CareerItem }) =>{
 const Timeline = () =>{
     const backgroundRef = useRef<HTMLImageElement>(null!)
     const timelineBoxRef = useRef<HTMLDivElement>(null!)
+    const titleRef = useRef<HTMLHeadingElement>(null!)
+
     // const [isScrolledToBottom, setIsScrolledToBottom] = useState(false)
     // const { render, setRender } = useRender()
 
     useEffect(() =>{
+        vanishingMoveNextAnimation(titleRef.current, 0)
         vanishingMoveNextAnimation(backgroundRef.current, 0)
     }, [])
 
@@ -65,7 +68,7 @@ const Timeline = () =>{
             <img ref={backgroundRef} className="background career-music-background" src={BACKGROUND_PATH} />
             <div className="career-box">
                 <div className="career-background" />
-                <header className="career-header">Kalendarium</header>
+                <header className="career-header" ref={titleRef}>Kalendarium</header>
                 <div
                     ref={timelineBoxRef}
                     className="career-timeline-box"
