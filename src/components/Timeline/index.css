@@ -28,6 +28,16 @@
     display: inline-block;
 }
 
+.career-header {
+    position: absolute;
+    z-index: 1;
+    right: 23vw;
+    top: 8vh;
+    font-size: 60px;
+    color: #c71e1e;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
 .career-year {
     margin: 30px;
     margin-bottom: 0;

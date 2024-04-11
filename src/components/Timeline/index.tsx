@@ -65,6 +65,7 @@ const Timeline = () =>{
             <img ref={backgroundRef} className="background career-music-background" src={BACKGROUND_PATH} />
             <div className="career-box">
                 <div className="career-background" />
+                <header className="career-header">Kalendarium</header>
                 <div
                     ref={timelineBoxRef}
                     className="career-timeline-box"

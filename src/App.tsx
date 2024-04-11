@@ -14,7 +14,7 @@ const App = () =>{
         <Navbar />
         {SUBSITES[render].el}
         {render != 0 && <NextArrow arrow="up"/>}
-        <NextArrow arrow="down"/>
+        {render != SUBSITES.length-1 && <NextArrow arrow="down"/>}
       </RenderProvider>
     </div>
   )
