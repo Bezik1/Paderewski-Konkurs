@@ -9,8 +9,10 @@ import gsap from "gsap"
 const MusicCareer = () =>{
     const backgroundRef = useRef<HTMLImageElement>(null!)
     const careerRef = useRef<HTMLDivElement>(null!)
+    const titleRef = useRef<HTMLHeadingElement>(null!)
 
     useEffect(() =>{
+        vanishingMoveNextAnimation(titleRef.current, 0)
         vanishingMoveNextAnimation(backgroundRef.current, 0)
     }, [])
 
@@ -29,11 +31,13 @@ const MusicCareer = () =>{
             <img ref={backgroundRef} src={PADEREWSKI_PATH} className='politics-background' />
             <div className="career-box">
                 <div className="career-background" />
-                <div className="career-container" ref={careerRef}>
-                    <header className="music-career-header">Kariera Muzyczna</header>
-                    <div className="career-element">
-                        {MUSIC_CAREER_ITEMS.map(career_item => <div className="career-el">{career_item.text}</div>)}
-                        <FaBirthdayCake className="birth-svg"/>
+                <div className="career-container-box">
+                    <header className="music-career-header" ref={titleRef}>Kariera Muzyczna</header>
+                    <div className="career-container" ref={careerRef}>
+                        <div className="career-element">
+                            {MUSIC_CAREER_ITEMS.map(career_item => <div className="career-el">{career_item.text}</div>)}
+                            <FaBirthdayCake className="birth-svg"/>
+                        </div>
                     </div>
                 </div>
             </div>

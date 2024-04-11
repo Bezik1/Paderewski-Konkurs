@@ -1,0 +1,39 @@
+.moral-authority-container {
+    display: flex;
+    width: 99vw;
+    height: 100vh;
+    align-items: right;
+    justify-content: right;
+}
+
+.moral-authority-content {
+    margin-top: 10vh;
+    z-index: 0;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    height: 58vh;
+    margin-right: 10vw;
+}
+
+.moral-authority-header {
+    margin-left: 0;
+    text-align: left;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    font-size: 60px;
+    color: #c71e1e;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.moral-authority-text {
+    background: radial-gradient(#ff000079, transparent);
+    padding: 10px;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.moral-authority-el {
+    margin-top: 20px;
+}

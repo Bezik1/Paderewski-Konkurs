@@ -1,19 +1,17 @@
 .career-container {
     z-index: 0;
     width: 35vw;
-    height: 68vh;
-    margin-top: 5vw;
+    height: 58vh;
     margin-right: 10vw;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    background:radial-gradient(#ff000079, transparent);
+    background: radial-gradient(#ff000079, transparent);
     padding-bottom: 40px;
 }
 
 .music-career-header {
-    padding-left: 20px;
-    transition: .5s;
+    margin-top: 10vh;
     margin-left: 0;
     text-align: left;
     display: flex;
@@ -22,6 +20,11 @@
     font-size: 60px;
     color: #c71e1e;
     font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.career-container-box {
+    z-index: 0;
+
 }
 
 .politics-background {

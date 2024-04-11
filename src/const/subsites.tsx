@@ -4,6 +4,7 @@ import Timeline from "../components/Timeline";
 import MusicCareer from "../components/MusicCareer";
 import Sources from "../components/Sources";
 import PoliticalActivity from "../components/PoliticalActivity";
+import MoralAuthority from "../components/MoralAuthority";
 
 export const SUBSITES: Subsite[] = [
     {
@@ -19,15 +20,15 @@ export const SUBSITES: Subsite[] = [
         el: <Map />
     },
     {
+        name: "Autorytet Moralny",
+        el: <MoralAuthority />
+    },
+    {
         name: "Działalność Polityczna",
         el: <PoliticalActivity />
     },
     {
         name: "Ciekawostki",
-        el: <div>Test</div>
-    },
-    {
-        name: "Autorytet Moralny",
         el: <div>Test</div>
     },
     {
