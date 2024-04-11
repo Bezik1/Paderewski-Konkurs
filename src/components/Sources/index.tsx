@@ -20,7 +20,10 @@ const Sources = () =>{
 
     return (
         <div className="sources-container">
-            <div className="blob" ref={blobRef}/>
+            <div ref={blobRef}>
+                <div className="blob"/>
+                <div className="blob-2"/>
+            </div>
             <div className="sources-content-box">
                 <header className="sources-content-header" ref={titleRef1}>Fotograficzne</header>
                 <div 

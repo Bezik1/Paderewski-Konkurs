@@ -22,6 +22,7 @@ const Navbar = () =>{
             vanishingAnimation(showBtnRef.current, 0)
             reveresedVanishingAnimation(pointRef.current, 0)
         } else {
+            reveresedVanishingAnimation(showBtnRef.current, 0.1)
             vanishingAnimation(listRef.current, 0, 0.1)
             vanishingAnimation(pointRef.current, 0)
         }
@@ -43,7 +44,7 @@ const Navbar = () =>{
         } else {
             setTimeout(() => {
                 setShow(!show);
-            }, 900);
+            }, 1100);
         }
     }
 
