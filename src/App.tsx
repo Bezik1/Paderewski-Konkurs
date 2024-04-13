@@ -7,7 +7,7 @@ import NextArrow from './components/NextArrow'
 import Title from './components/Title'
 
 const App = () =>{
-  const [render, setRender] = useState(0)
+  const [render, setRender] = useState(2)
 
   return (
     <div className='app'>
