@@ -18,18 +18,18 @@ const CareerElement = ({ item } : { item: CareerItem }) =>{
     return (
         <VerticalTimelineElement
             className="vertical-timeline-element--work career-el"
-            contentStyle={{ background: '#ff00003a', paddingBottom: 0, color: '#fff' }}
+            contentStyle={{ background: '#ff00003a', minHeight: 200, paddingBottom: 10, color: '#fff' }}
             contentArrowStyle={{ borderRight: '7px solid  #fff' }}
             date={String(year)}
             dateClassName="career-year"
             iconStyle={{ background: '#ab1515', color: '#fff' }}
             >
-            <p>
+            <p className={`${readMore || title.length <= MAX_TEXT_LEN ? "" : "gray"}`}>
                 {!readMore 
                     ? title.substring(0, 99)
                     : title
                 }
-                {title.length > MAX_TEXT_LEN && <div onClick={() => setReadMore(!readMore)} className={`read-more ${readMore ? 'read-active' : ''}`}>
+                {title.length > MAX_TEXT_LEN && <div onClick={() => setReadMore(!readMore)} className={`read-more-timeline ${readMore ? 'read-active' : ''}`}>
                     {readMore ? "Czytaj mniej" : "Czytaj więcej"}
                 </div>}
             </p>

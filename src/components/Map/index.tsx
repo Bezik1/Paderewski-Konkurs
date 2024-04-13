@@ -26,7 +26,6 @@ const Map = () =>{
     return (
         <LocationProvider location={currentLocation} setLocation={setCurrentLocation}>
             <img className='earth-background' src={COSMOS_PATH} ref={backgroundRef}/>
-            <Informator />
             <div className='earth-container'>
                 <Canvas ref={canvasRef}>
                     <ambientLight intensity={1} />
@@ -36,6 +35,7 @@ const Map = () =>{
                     </EffectComposer>
                 </Canvas>
             </div>
+            <Informator />
             <LocationList />
         </LocationProvider>
     )

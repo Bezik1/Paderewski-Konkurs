@@ -50,6 +50,29 @@
     gap: 5px;
 }
 
+.read-more-timeline {
+    z-index: 3;
+    transition: .5s;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+}
+
+.read-more-timeline:hover {
+    cursor: pointer;
+    transition: .5s;
+    transform: translateY(-3px);
+    text-shadow: 0 0 5px #fff;
+}
+
+.gray {
+    color: #ffffff86;
+    overflow: hidden;
+    display: inline-block;
+}
+
 @media screen and (max-width: 800px) {
     .career-music-background {
         height: 0;        

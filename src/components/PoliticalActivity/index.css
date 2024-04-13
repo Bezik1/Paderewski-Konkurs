@@ -5,3 +5,14 @@
     align-items: right;
     justify-content: right;
 }
+
+.political-header {
+    margin-left: 0;
+    text-align: left;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    font-size: 50px;
+    color: #c71e1e;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}

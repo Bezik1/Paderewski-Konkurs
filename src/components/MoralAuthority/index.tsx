@@ -31,7 +31,7 @@ const MoralAuthority = () =>{
             <img ref={backgroundRef} src={PADEREWSKI_PATH} className='politics-background' />
             <div className="career-background" />
             <div className="moral-authority-content">
-                <header className="moral-authority-header" ref={titleRef}>Autorytet Morlany</header>
+                <header className="moral-authority-header" ref={titleRef}>Autorytet Moralny</header>
                 <div ref={moralRef} className="moral-authority-text">{MORAL_AUTHORITY_TEXT.map(el => 
                                                                                 <div 
                                                                                     className="moral-authority-el">
