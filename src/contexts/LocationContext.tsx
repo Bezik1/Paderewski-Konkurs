@@ -1,9 +1,9 @@
 import { createContext, useContext } from "react";
 import { Location } from "../types/Location";
-import { STRASBURG } from "../const/locations";
+import { HOLANDIA } from "../const/locations";
 
 const LocationContext = createContext<[Location, React.Dispatch<React.SetStateAction<Location>> | undefined]>([
-    STRASBURG, 
+    HOLANDIA, 
     undefined,
 ])
 

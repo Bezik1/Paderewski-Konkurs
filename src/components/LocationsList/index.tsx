@@ -6,10 +6,13 @@ import './index.css'
 import { vanishingAnimation } from '../../animations/Vanishing'
 
 const LocationItem = ({ itemLocation } : { itemLocation: Location }) =>{
-    const { setLocation } = useLocationContext()
+    const { location, setLocation } = useLocationContext()
 
     return (
-        <div className='location-el' onClick={() => setLocation(itemLocation)}>
+        <div 
+            className={`location-el ${location.name == itemLocation.name && "location-el-active"}`} 
+            onClick={() => setLocation(itemLocation)}
+        >
             {itemLocation.name}
         </div>
     )

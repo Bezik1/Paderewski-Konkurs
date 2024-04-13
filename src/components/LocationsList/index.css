@@ -1,9 +1,8 @@
 .location-list {
-    z-index: 6;
+    z-index: 4;
     width: 10vw;
     height: 100vh;
-    position: absolute;
-    left: 5vw;
+    margin-right: 20vw;
     display: flex;
     justify-content: center;
     display: flex;
@@ -19,6 +18,13 @@
 }
 
 .location-el:hover {
+    cursor: pointer;
+    transition: .5s;
+    transform: translateX(-5px);
+    text-shadow: 0 0 5px #fff;
+}
+
+.location-el-active {
     cursor: pointer;
     transition: .5s;
     transform: translateX(-5px);

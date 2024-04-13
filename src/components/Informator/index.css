@@ -14,8 +14,7 @@
 .content {
     height: 50vh;
     margin-bottom: 20vh;
-    position: absolute;
-    right: 10vw;
+    margin-left: 2.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;

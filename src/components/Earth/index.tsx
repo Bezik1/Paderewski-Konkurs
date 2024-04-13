@@ -75,7 +75,7 @@ const LocationPoint = ({ itemLocation, handleRotate }: { itemLocation: Location;
     useFrame(() => (earthRef.current.rotation.y -= 0.0003));
   
     return (
-      <group ref={earthRef} position={[-1.5, 0, 0]}>
+      <group ref={earthRef}>
         <Sphere args={[2, 16, 16]} ref={meshRef}>
           <meshPhongMaterial map={colorMap} color={0xffffff} emissive={0xffffff} emissiveIntensity={0.2} alphaMap={specularMap} alphaTest={0.15} />
         </Sphere>
