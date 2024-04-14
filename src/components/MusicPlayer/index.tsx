@@ -3,8 +3,8 @@ import { FaGooglePlay } from "react-icons/fa";
 import './index.css'
 import gsap from "gsap";
 
-const MusicPlayer = ({ path, animate, children } : { path: string, animate: boolean, children: ReactNode }) =>{
-    const audioRef = useRef<HTMLAudioElement>(null!)
+const MusicPlayer = ({ currentPath, path, setCurrentPath, animate, children,audioRef } : 
+    { currentPath: string, path: string, setCurrentPath: React.Dispatch<React.SetStateAction<string>>, animate: boolean, children: ReactNode, audioRef: React.MutableRefObject<HTMLAudioElement> }) =>{
     const playRef = useRef<HTMLDivElement>(null!)
     const [play, setPlay] = useState(false)
     const [firstPlay, setFirstPlay] = useState(true)
@@ -32,7 +32,7 @@ const MusicPlayer = ({ path, animate, children } : { path: string, animate: bool
 
     useEffect(() =>{
         if(audioRef.current && firstPlay) {
-            audioRef.current.currentTime += 3.5
+            audioRef.current.currentTime += 7
             audioRef.current.volume = 0.5
             setFirstPlay(false)
         }
@@ -41,15 +41,17 @@ const MusicPlayer = ({ path, animate, children } : { path: string, animate: bool
         else audioRef.current.pause() 
     }, [play])
 
+    const handlePlay = () =>{
+        if(path == currentPath) setPlay(!play)
+        else setCurrentPath(path)
+    }
+
     return (
         <>
             <div className="play-container" ref={playRef}>
                 <header className="play-header">{children}</header>
-                <FaGooglePlay className={`play-icon ${play && "play-icon-active"}`} onClick={() => setPlay(!play)} />
+                <FaGooglePlay className={`play-icon ${play && "play-icon-active"}`} onClick={handlePlay} />
             </div>
-            <audio ref={audioRef}>
-                <source src={path} type="audio/mpeg" />
-            </audio>
         </>
     )
 }
