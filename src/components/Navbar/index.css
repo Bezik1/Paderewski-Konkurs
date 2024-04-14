@@ -27,14 +27,21 @@
 }
 
 .menu-btn {
+    transition: .5s;
     cursor: pointer;
-    color: #fff;
+    color: #ffffff63;
     width: 30px;
     height: 30px;
     position: fixed;
     padding: 10px;
     top: 50px;
     right: 50px;
+    opacity: 1;
+}
+
+.menu-btn:hover {
+    transition: .5s;
+    color: #fff;
 }
 
 .close-btn {
@@ -44,6 +51,11 @@
     right: 50px;
     width: 50px;
     height: 50px;
+    color: #ffffff63;
+}
+
+.close-btn:hover {
+    transition: .5s;
     color: #fff;
 }
 
