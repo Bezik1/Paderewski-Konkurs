@@ -1,13 +1,13 @@
-import { ReactNode, useEffect, useRef, useState } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 import { FaGooglePlay } from "react-icons/fa";
 import './index.css'
 import gsap from "gsap";
+import { useMusic } from "../../contexts/MusicContext";
 
-const MusicPlayer = ({ currentPath, path, setCurrentPath, animate, children,audioRef } : 
-    { currentPath: string, path: string, setCurrentPath: React.Dispatch<React.SetStateAction<string>>, animate: boolean, children: ReactNode, audioRef: React.MutableRefObject<HTMLAudioElement> }) =>{
+const MusicPlayer = ({ path, animate, children, audioRef, idx } : 
+    { path: string, idx: number, animate: boolean, children: ReactNode, audioRef: React.MutableRefObject<HTMLAudioElement> }) =>{
     const playRef = useRef<HTMLDivElement>(null!)
-    const [play, setPlay] = useState(false)
-    const [firstPlay, setFirstPlay] = useState(true)
+    const { path: currentPath, play, setMusic } = useMusic()
 
     useEffect(() =>{
         console.log(animate)
@@ -18,6 +18,7 @@ const MusicPlayer = ({ currentPath, path, setCurrentPath, animate, children,audi
             }, {
                 opacity: 1,
                 x: 0,
+                delay: idx*0.1,
             })
         } else {
             gsap.fromTo(playRef.current, {
@@ -25,32 +26,39 @@ const MusicPlayer = ({ currentPath, path, setCurrentPath, animate, children,audi
                 x: 0,
             }, {
                 opacity: 0,
-                x: -50
+                x: -50,
+                delay: idx*0.1,
             })
         }
     }, [animate])
 
-    useEffect(() =>{
-        if(audioRef.current && firstPlay) {
-            audioRef.current.currentTime += 7
-            audioRef.current.volume = 0.5
-            setFirstPlay(false)
-        }
+    // useEffect(() =>{
+    //     if(audioRef.current && (currentPath != path && play)) {
+    //         audioRef.current.currentTime += 7
+    //         audioRef.current.volume = 0.5
+    //     }
+    // }, [play])
 
+    useEffect(() =>{
         if(play) audioRef.current.play()
-        else audioRef.current.pause() 
+        else if (!play) audioRef.current.pause() 
     }, [play])
 
     const handlePlay = () =>{
-        if(path == currentPath) setPlay(!play)
-        else setCurrentPath(path)
+        let newMusic: [string, boolean] = ['', false]
+        if(path == currentPath && play) newMusic = [currentPath, false]
+        else if (path == currentPath && !play) newMusic = [currentPath, true]
+        else newMusic = [path, true]
+
+        setMusic(newMusic)
+        if(newMusic[0] != currentPath) audioRef.current.src = newMusic[0]
     }
 
     return (
         <>
             <div className="play-container" ref={playRef}>
                 <header className="play-header">{children}</header>
-                <FaGooglePlay className={`play-icon ${play && "play-icon-active"}`} onClick={handlePlay} />
+                <FaGooglePlay className={`play-icon ${(play && path==currentPath) && "play-icon-active"}`} onClick={handlePlay} />
             </div>
         </>
     )
