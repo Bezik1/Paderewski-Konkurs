@@ -36,6 +36,7 @@ const Map = () =>{
                 </Canvas>
             </div>
             <Informator />
+            <header className='map-header'>Estrady Świata</header>
             <LocationList />
         </LocationProvider>
     )

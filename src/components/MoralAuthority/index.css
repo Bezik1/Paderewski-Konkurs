@@ -30,6 +30,7 @@
 .moral-authority-text {
     background: radial-gradient(#ff000079, transparent);
     padding: 10px;
+    height: 40vh;
     flex-direction: column;
     overflow-y: scroll;
 }

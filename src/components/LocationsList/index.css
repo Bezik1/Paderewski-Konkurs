@@ -2,7 +2,7 @@
     position: fixed;
     z-index: 4;
     width: 18vw;
-    top: 20vh;
+    top: 25vh;
     right: 18vw;
     height: 300px;
     display: flex;
@@ -11,6 +11,17 @@
     flex-direction: column;
     gap: 40px;
     overflow-y: auto;
+}
+
+.map-header {
+    position: absolute;
+    top: 18vh;
+    left: 2.5vw;
+    text-align: right;
+    margin-right: 30px;
+    transition: .5s;
+    font-size: 50px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .location-el {

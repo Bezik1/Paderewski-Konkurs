@@ -18,4 +18,4 @@ export const INFORMATIONAL_SOURCES = [
     'https://wsm.art.pl/?page_id=9796',
 ]
 
-export const SOURCES_AUTHORS = "Strona przygotowana przez: Mateusz Adamowicz, Przemysław Mazurowski 2024"
+export const SOURCES_AUTHORS = "Strona przygotowana przez: Mateusz Adamowicz, Przemysław Mazurowski pod opieką mgr. Mirosława Przygody I LO Lubin 2024"
