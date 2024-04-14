@@ -7,7 +7,7 @@ import Title from './components/Title'
 import './App.css'
 import Musicbar from './components/Musicbar'
 import { MusicProvider } from './contexts/MusicContext'
-import MUSIC_PATH from "./assets/background_music.mp3"
+import MUSIC_PATH from "./assets/Ignacy Jan Paderewski - Polish Fantasy Op (mp3cut.net).mp3"
 
 const App = () =>{
   const [render, setRender] = useState(0)

@@ -32,13 +32,6 @@ const MusicPlayer = ({ path, animate, children, audioRef, idx } :
         }
     }, [animate])
 
-    // useEffect(() =>{
-    //     if(audioRef.current && (currentPath != path && play)) {
-    //         audioRef.current.currentTime += 7
-    //         audioRef.current.volume = 0.5
-    //     }
-    // }, [play])
-
     useEffect(() =>{
         if(play) audioRef.current.play()
         else if (!play) audioRef.current.pause() 
@@ -51,7 +44,10 @@ const MusicPlayer = ({ path, animate, children, audioRef, idx } :
         else newMusic = [path, true]
 
         setMusic(newMusic)
-        if(newMusic[0] != currentPath) audioRef.current.src = newMusic[0]
+        if(newMusic[0] != currentPath) {
+            audioRef.current.src = newMusic[0]
+            audioRef.current.play()
+        }
     }
 
     return (

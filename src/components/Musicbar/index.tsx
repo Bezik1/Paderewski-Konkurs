@@ -1,9 +1,9 @@
 import { useRef, useState } from "react"
 import { GiMusicalScore } from "react-icons/gi";
 import "./index.css"
-import MUSIC_PATH from '../../assets/background_music.mp3'
-import MUSIC_PATH_2 from '../../assets/Chants du voyageur, Op.8 (Paderewski, Ignacy Jan).mp3'
-import MUSIC_PATH_3 from '../../assets/Ignacy Jan Paderewski - 6 Humoresques de Concert Op. 14 (audio sheet music).mp3'
+import MUSIC_PATH from '../../assets/Ignacy Jan Paderewski - Polish Fantasy Op (mp3cut.net).mp3'
+import MUSIC_PATH_2 from '../../assets/Chants du voyageur, Op.8 (Paderewski, Ignacy Jan) (1).mp3'
+import MUSIC_PATH_3 from '../../assets/Ignacy Jan Paderewski - 6 Humoresques de Concert Op (mp3cut.net).mp3'
 import MusicPlayer from "../MusicPlayer";
 import { useMusic } from "../../contexts/MusicContext";
 
