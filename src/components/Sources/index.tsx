@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react"
-import { INFORMATIONAL_SOURCES, PHOTOGRAPHIC_SOURCES } from "../../const/sources"
+import { INFORMATIONAL_SOURCES, MUSIC_SOURCES, PHOTOGRAPHIC_SOURCES, SOURCES_AUTHORS } from "../../const/sources"
 import "./index.css"
 import { vanishingAnimation, vanishingMoveNextAnimation } from "../../animations/Vanishing"
 
@@ -25,20 +25,30 @@ const Sources = () =>{
                 <div className="blob-2"/>
             </div>
             <div className="sources-content-box">
-                <header className="sources-content-header" ref={titleRef1}>Fotograficzne</header>
+                <header className="sources-content-header" ref={titleRef1}>Źródła Fotograficzne</header>
                 <div 
                     className="sources-content"
                     ref={boxRef1}
                 >
                     {PHOTOGRAPHIC_SOURCES.map(source => <div className="source">{source}</div>)}
                 </div>
-                <header className="sources-content-header" ref={titleRef2}>Informacyjne</header>
+                <header className="sources-content-header" ref={titleRef2}>Źródła Informacyjne</header>
                 <div 
                     className="sources-content"
                     ref={boxRef2}
                 >
                     {INFORMATIONAL_SOURCES.map(source => <div className="source">{source}</div>)}
                 </div>
+                <header className="sources-content-header" ref={titleRef2}>Źródła Muzyczne</header>
+                <div 
+                    className="sources-content"
+                    ref={boxRef2}
+                >
+                    {MUSIC_SOURCES.map(source => <div className="source">{source}</div>)}
+                </div>
+            </div>
+            <div className="authors">
+                {SOURCES_AUTHORS}
             </div>
         </div>
     )

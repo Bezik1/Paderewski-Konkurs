@@ -9,7 +9,7 @@ import Trivias from "../components/Trivias";
 
 export const SUBSITES: Subsite[] = [
     {
-        name: "Oś Czasu",
+        name: "Kalendarium",
         el: <Timeline />
     },
     {
@@ -17,7 +17,7 @@ export const SUBSITES: Subsite[] = [
         el: <MusicCareer />
     },
     {
-        name: "Mapa",
+        name: "Estrady Świata",
         el: <Map />
     },
     {

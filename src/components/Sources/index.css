@@ -9,7 +9,7 @@
 .sources-content-box {
     position: absolute;
     right: 9%;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 .sources-content-header {
@@ -62,6 +62,15 @@
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     backface-visibility: hidden;
     animation-direction: alternate
+}
+
+.authors {
+  position: absolute;
+  padding: 20px;
+  background: linear-gradient(-45deg, #000000ca, transparent);
+  bottom: 50px;
+  width: 25vw;
+  right: 50px;
 }
 
 @keyframes colorChange {

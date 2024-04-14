@@ -73,7 +73,7 @@ export const HOLANDIA: Location = {
 }
 
 export const AUSTRALIA: Location = {
-    name: "Australia i Nowa Zelandia:",
+    name: "Australia i Nowa Zelandia",
     text: 'W 1904r. Paderewski dopłynął do Melbourne po 35 dniach podróży z Marsylii. Wystąpił w wielu miastach, w tym z orkiestrą w Sydney. Paderewski szczególnie zainteresował się plemieniem Maorysów zamieszkujących Nową Zelandię. Zajmowały go ich zwyczaje i życie codzienne w środowisku, w którym otaczały ich liczne gorące gejzery i inne elementy przyrody niespotykane pospolicie w Europie. Pianista był ogromnie zadowolony z pobytu w Nowej Zelandii. Do Australii Paderewski powrócił w 1927r.. Według artysty, tamten rejon świata zmienił się na niekorzyść.',
     position: new Vector3(1, -0.2, -1.7),
     rotateTo: -2.3
