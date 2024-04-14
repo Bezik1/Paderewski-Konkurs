@@ -51,14 +51,6 @@
   height: 100vh;
 }
 
-.music {
-  z-index: 10;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 200px;
-  left: 50px;
-}
 
 @media screen and (max-width: 800){
     

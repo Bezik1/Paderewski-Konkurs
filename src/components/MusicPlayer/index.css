@@ -1,0 +1,36 @@
+.play-container {
+    position: absolute;
+    top: 20vh;
+    left: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.play-header {
+    font-size: 30px;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.play-icon {
+    transition: .5s;
+    width: 5vw;
+    height: 8vh;
+    border-radius: 50px;
+    color: #ffffff95;
+}
+
+.play-icon:hover {
+    transition: .5s;
+    transform: translateX(5px);
+    cursor: pointer;
+    color: #fff;
+}
+
+.play-icon-active {
+    transition: .5s;
+    transform: translateX(5px);
+    cursor: pointer;
+    color: #fff;
+}

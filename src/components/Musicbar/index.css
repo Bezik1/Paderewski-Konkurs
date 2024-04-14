@@ -1,0 +1,26 @@
+.musicbar {
+    z-index: 10;
+}
+
+.icon {
+    transition: .5s;
+    position: absolute;
+    top: 5vh;
+    left: 2vw;
+    width: 5vw;
+    height: 8vh;
+    border-radius: 50px;
+    color: #ffffff95;
+}
+
+.icon:hover {
+    transition: .5s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.icon-active {
+    transition: .5s;
+    cursor: pointer;
+    color: #fff;
+}

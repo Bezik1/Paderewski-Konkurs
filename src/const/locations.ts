@@ -39,7 +39,7 @@ const SWITZERLAND: Location = {
 const RUSSIA: Location = {
     name: "Rosja",
     text: "Pierwsze tournée po Rosji Paderewski odbył w 1899r.. Słuchaczom podobały się występy polskiego pianisty i wyrażali się o nim z uznaniem, jednak instytucje muzyczne odnosiły się do niego wrogo. Źródłem nieprzyjaznego stosunku do Paderewskiego mógł być fakt, że był Polakiem. Ponadto nie chciano by jakikolwiek artysta zbliżył się sławą do Antoniego Rubinsteina, który otoczony był w Rosji swoistym kultem. Tournée po Rosji obfitowało w nieprzyjemne dla artysty zdarzenia.",
-    position: new Vector3(1.05, 0.8, 1.55),
+    position: new Vector3(0.65, 0.8, 1.7),
     rotateTo: -0.6
 }
 
@@ -75,7 +75,7 @@ export const HOLANDIA: Location = {
 export const AUSTRALIA: Location = {
     name: "Australia i Nowa Zelandia:",
     text: 'W 1904r. Paderewski dopłynął do Melbourne po 35 dniach podróży z Marsylii. Wystąpił w wielu miastach, w tym z orkiestrą w Sydney. Paderewski szczególnie zainteresował się plemieniem Maorysów zamieszkujących Nową Zelandię. Zajmowały go ich zwyczaje i życie codzienne w środowisku, w którym otaczały ich liczne gorące gejzery i inne elementy przyrody niespotykane pospolicie w Europie. Pianista był ogromnie zadowolony z pobytu w Nowej Zelandii. Do Australii Paderewski powrócił w 1927r.. Według artysty, tamten rejon świata zmienił się na niekorzyść.',
-    position: new Vector3(1.3, 0, -1.5),
+    position: new Vector3(1, -0.2, -1.7),
     rotateTo: -2.3
 }
 

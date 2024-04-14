@@ -33,10 +33,6 @@ export const SUBSITES: Subsite[] = [
         el: <Trivias />
     },
     {
-        name: "AI",
-        el: <div>Test</div>
-    },
-    {
         name: "Źródła",
         el: <Sources />
     }
