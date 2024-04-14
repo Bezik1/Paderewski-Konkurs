@@ -14,11 +14,11 @@ const MUSIC_PATHS = [
     }, 
     {
         path: MUSIC_PATH_2,
-        text: "Chants du voyageur, Op.8"
+        text: "Pieśni wędrowca Op.8"
     },
     {
         path: MUSIC_PATH_3,
-        text: "Humoresques de Concert Op. 14"
+        text: "Humoreski koncertowe Op.14"
     }, 
 ]
 
