@@ -5,6 +5,7 @@ import MusicCareer from "../components/MusicCareer";
 import Sources from "../components/Sources";
 import PoliticalActivity from "../components/PoliticalActivity";
 import MoralAuthority from "../components/MoralAuthority";
+import Trivias from "../components/Trivias";
 
 export const SUBSITES: Subsite[] = [
     {
@@ -29,7 +30,7 @@ export const SUBSITES: Subsite[] = [
     },
     {
         name: "Ciekawostki",
-        el: <div>Test</div>
+        el: <Trivias />
     },
     {
         name: "AI",
