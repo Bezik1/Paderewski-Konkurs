@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import ReactAudioPlayer from 'react-audio-player';
 
 const Music = ({ path } : { path: string}) =>{
     const musicRef = useRef<HTMLAudioElement>(null!)
