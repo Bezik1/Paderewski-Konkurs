@@ -40,7 +40,7 @@
     position: absolute;
     top: 25%;
     left: 5%;
-    background: linear-gradient(#fff, #f00);
+    background: linear-gradient(#f00, #fff);
     animation: morphing 10s infinite, colorChange 5s infinite;
     width: 30vw;
     height: 55vh;
@@ -54,7 +54,7 @@
     position: absolute;
     top: 25%;
     left: 5%;
-    background: linear-gradient(#f00, #fff);
+    background: linear-gradient(#fff, #f00);
     animation: morphing 10s infinite;
     width: 30vw;
     height: 55vh;

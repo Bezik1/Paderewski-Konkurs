@@ -126,7 +126,7 @@ export const CAREER_ITEMS: CareerItem[] = [
         year: 1917      
     },
     {
-        title: "Prezydent Wilson w 13. punkcie swego orędzia pokojowego określa niepodległą Polskę za jeden z warunków przyszłego pokoju w Europie; Paderewski spotyka się z prezydentem USA w Waszyngtonie, tworzy Polski Biały Krzyż; Paderewski przybywa do Gdańska na pokładzie brytyjskiego krążownika „Concord”, kieruje się do Poznania i swą przemową daje impuls do wybuchu powstania wielkopolskiego",
+        title: "Prezydent Wilson w 13. punkcie swego orędzia pokojowego określa niepodległą Polskę za jeden z warunków przyszłego pokoju w Europie; Paderewski spotyka się z prezydentem USA w Waszyngtonie, odzyskanie przez Polskę niepodległośc; Paderewski przybywa do Gdańska na pokładzie brytyjskiego krążownika „Concord”, kieruje się do Poznania i swą przemową daje impuls do wybuchu powstania wielkopolskiego",
         year: 1918      
     },
     {

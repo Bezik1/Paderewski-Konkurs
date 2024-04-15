@@ -6,9 +6,12 @@ import { vanishingAnimation, vanishingMoveNextAnimation } from "../../animations
 const Sources = () =>{
     const boxRef1 = useRef<HTMLDivElement>(null!)
     const boxRef2 = useRef<HTMLDivElement>(null!)
+    const boxRef3 = useRef<HTMLDivElement>(null!)
     const titleRef1 = useRef<HTMLHeadingElement>(null!)
     const titleRef2 = useRef<HTMLHeadingElement>(null!)
+    const titleRef3 = useRef<HTMLHeadingElement>(null!)
     const blobRef = useRef<HTMLDivElement>(null!)
+    const creditsRef = useRef<HTMLDivElement>(null!)
 
     useEffect(() =>{
         vanishingMoveNextAnimation(blobRef.current, 0)
@@ -16,6 +19,10 @@ const Sources = () =>{
         vanishingAnimation(boxRef1.current, 0.1, 0.1)
         vanishingAnimation(titleRef2.current, 0.5)
         vanishingAnimation(boxRef2.current, 0.6, 0.1)
+        vanishingAnimation(titleRef3.current, 1.0)
+        vanishingAnimation(boxRef3.current, 1.1, 0.1)
+
+        vanishingAnimation(creditsRef.current, 1.2)
     })
 
     return (
@@ -39,15 +46,15 @@ const Sources = () =>{
                 >
                     {INFORMATIONAL_SOURCES.map(source => <div className="source">{source}</div>)}
                 </div>
-                <header className="sources-content-header" ref={titleRef2}>Źródła Muzyczne</header>
+                <header className="sources-content-header" ref={titleRef3}>Źródła Muzyczne</header>
                 <div 
                     className="sources-content"
-                    ref={boxRef2}
+                    ref={boxRef3}
                 >
                     {MUSIC_SOURCES.map(source => <div className="source">{source}</div>)}
                 </div>
             </div>
-            <div className="authors">
+            <div className="authors" ref={creditsRef}>
                 {SOURCES_AUTHORS}
             </div>
         </div>

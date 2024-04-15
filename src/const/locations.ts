@@ -79,4 +79,11 @@ export const AUSTRALIA: Location = {
     rotateTo: -2.3
 }
 
-export const LOCATIONS: Location[] = [AMERICA, AUSTRALIA, FRENCH, DEUSTH, RUSSIA, AUSTRIA, SOUTH_AMERICA, AFRICA, SWITZERLAND, UK, HOLANDIA]
+const POLAND: Location = {
+    name: "Polska",
+    text: 'Paderewski już jako renomowany pianista koncertował m.in. we Lwowie, w Warszawie i w Krakowie. W Teatrze Miejskim we Lwowie odbyła się premiera jego opery – „Manru”. Artysta cenił odpoczynek w polskich górach. W Krakowie Paderewski po raz pierwszy rozgrzał serca rodaków patriotyczną mową - przy okazji odsłonięcia, ufundowanego i postawionego z jego inicjatywy, pomnika grunwaldzkiego.  W 1918r. przybył do Polski w Gdańsku, a następnie, przez Poznań udał się do Warszawy. Jego obecność w stolicy wielkopolski dała impuls do wybuchu Powstania Wielkopolskiego. W Warszawie Paderewski pełnił urząd prezydenta rady ministrów. Ostatni raz był w Polsce w 1924r..”. ',
+    position: new Vector3(0.36, 0.56, 1.9),
+    rotateTo: -0.25
+}
+
+export const LOCATIONS: Location[] = [AMERICA, AUSTRALIA, FRENCH, DEUSTH, RUSSIA, AUSTRIA, SOUTH_AMERICA, AFRICA, SWITZERLAND, UK, HOLANDIA, POLAND]
